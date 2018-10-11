@@ -1,0 +1,11 @@
+[Unit]
+Description=Mikrotik Honeyport
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/mikrotik-honeyport.sh
+User=mtblacklist
+Group=mtblacklist
+
+[Install]
+WantedBy=default.target
